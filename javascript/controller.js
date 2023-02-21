@@ -7,6 +7,7 @@ function setList(index) {
     for (let i = 0; i < folderArrays.length; i++) {
       for (let j = 0; j < folderArrays[i].length; j++) {
         model.listPlaying.push(folderArrays[i][j]);
+        model.folderPlaying = "Alle mapper";
       }
     }
   } else {
