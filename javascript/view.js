@@ -31,10 +31,11 @@ function getList() {
             </option>
             `
             : `
-            <option value="${model.folders.length}">
-                Alle mapper
-            </option>`
+            `
         }
+        <option value="${model.folders.length}">
+                Alle mapper
+            </option>
     `;
   model.folders.forEach((folder, folderIndex) => {
     options += /*html*/ `

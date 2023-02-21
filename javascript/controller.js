@@ -1,4 +1,5 @@
 function setList(index) {
+  model.listPlaying = [];
   if (parseInt(index) == model.folders.length) {
     let folderArrays = model.folders.map((folder) => {
       return folder.files;
