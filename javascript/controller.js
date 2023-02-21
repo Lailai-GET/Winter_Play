@@ -1,15 +1,35 @@
-function setList(index){
-    model.listPlaying = model.folders[index].files;
+function setList(index) {
+  if (parseInt(index) == model.folders.length) {
+    let folderArrays = model.folders.map((folder) => {
+      return folder.files;
+    });
+    for (let i = 0; i < folderArrays.length; i++) {
+      for (let j = 0; j < folderArrays[i].length; j++) {
+        model.listPlaying.push(folderArrays[i][j]);
+      }
+    }
+  } else {
+    model.listPlaying = model.folders[parseInt(index)].files;
+    model.folderPlaying = model.folders[parseInt(index)].name;
+  }
 }
-function setSong(index){
-model.indexPlaying = index;
-model.current.src = model.listPlaying[model.indexPlaying].path;
+function setSong(index) {
+  model.indexPlaying = parseInt(index);
+  model.current.src = model.listPlaying[model.indexPlaying].path;
+  if (model.isPlaying) playSong();
 }
-function playSong(){
-    model.current.play();
+function playPause() {
+  if (!model.isPlaying) {
+    playSong();
+    model.isPlaying = !model.isPlaying;
+  } else {
+    pauseSong();
+    model.isPlaying = !model.isPlaying;
+  }
 }
-function pauseSong(){
-    model.current.pause();
+function playSong() {
+  model.current.play();
 }
-setList(0);
-setSong(1);
+function pauseSong() {
+  model.current.pause();
+}
