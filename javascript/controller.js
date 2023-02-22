@@ -30,8 +30,18 @@ function playPause() {
   }
 }
 function playSong() {
+  model.namePlaying = model.listPlaying[model.indexPlaying].name;
   model.current.play();
 }
 function pauseSong() {
   model.current.pause();
+}
+function nextSong() {
+    if (model.indexPlaying == model.listPlaying.length - 1) {
+        model.indexPlaying = 0;
+      } else {
+        model.indexPlaying++;
+      }
+      setSong(model.indexPlaying);
+      playSong();
 }

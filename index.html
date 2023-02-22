@@ -14,10 +14,13 @@
     <div id="app"></div>
 
     <script>
-        const page = document.getElementById("app");
-        setList(model.folders.length);
-        setSong(0);
-        updateView();
+      const page = document.getElementById("app");
+      setList(model.folders.length);
+      setSong(0);
+      model.current.onended = () => {
+        nextSong();
+      };
+      updateView();
     </script>
   </body>
 </html>
