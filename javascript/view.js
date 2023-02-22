@@ -12,13 +12,17 @@ function updateView() {
               !model.isPlaying && !model.current.paused
                 ? `${getSong()}`
                 : `
-            <option>Velg sang</option>
+            <option>${model.namePlaying}</option>
             ${getSong()}
             `
             }
             </select>
         </div>
+        <div class="buttons">
+        <button onclick="previousSong()"><--</button>
         <button onclick="playPause()">p/p</button>
+        <button onclick="nextSong()">--></button>
+        </div>
     </div>
     `;
   page.innerHTML = html;
@@ -51,7 +55,7 @@ function getList() {
 }
 function getSong() {
     //henter liste over sanger
-  let options = "";
+  let options = ``;
   model.listPlaying.forEach((song, songIndex) => {
     options += /*html*/ `
         <option value="${songIndex}">

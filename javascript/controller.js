@@ -16,9 +16,11 @@ function setList(index) {
   }
 }
 function setSong(index) {
+  model.namePlaying = model.listPlaying[model.indexPlaying].name;
   model.indexPlaying = parseInt(index);
   model.current.src = model.listPlaying[model.indexPlaying].path;
   if (model.isPlaying) playSong();
+  updateView();
 }
 function playPause() {
   if (!model.isPlaying) {
@@ -30,18 +32,26 @@ function playPause() {
   }
 }
 function playSong() {
-  model.namePlaying = model.listPlaying[model.indexPlaying].name;
   model.current.play();
 }
 function pauseSong() {
   model.current.pause();
 }
 function nextSong() {
-    if (model.indexPlaying == model.listPlaying.length - 1) {
-        model.indexPlaying = 0;
-      } else {
-        model.indexPlaying++;
-      }
-      setSong(model.indexPlaying);
-      playSong();
+  if (model.indexPlaying == model.listPlaying.length - 1) {
+    model.indexPlaying = 0;
+  } else {
+    model.indexPlaying++;
+  }
+  setSong(model.indexPlaying);
+  playSong();
+}
+function previousSong() {
+  if (model.indexPlaying == 0) {
+    model.indexPlaying = model.listPlaying.length - 1;
+  } else {
+    model.indexPlaying--;
+  }
+  setSong(model.indexPlaying);
+  playSong();
 }
