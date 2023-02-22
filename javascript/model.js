@@ -21,6 +21,18 @@ const model = {
           name: "Eplejakt",
           path: "music/Seasonality/Eplejakt.mp3",
         },
+        {
+          name: "Jaktlyn",
+          path: "music/Seasonality/Jaktlyn.mp3",
+        },
+        {
+          name: "Lille Dvergen",
+          path: "music/Seasonality/Lille Dvergen.mp3",
+        },
+        {
+          name: "Zaraikvals Avskjedssang",
+          path: "music/Seasonality/Zaraikvals Avskjedssang.mp3",
+        },
       ],
     },
     {
