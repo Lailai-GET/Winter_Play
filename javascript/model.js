@@ -38,11 +38,27 @@ const model = {
     {
       name: "The Mountain Goats",
       files: [
-        {
-          name: "Woke Up New",
-          path: "music/The Mountain Goats/Woke new.mp3",
-        },
-      ],
+          {
+              name: "Clemency for the Wizard King",
+              path: "music/The Mountain Goats/Clemency for the Wizard King.mp3",
+            },
+            {
+                name: "Damn These Vampires",
+                path: "music/The Mountain Goats/Damn These Vampires.mp3",
+            },
+            {
+                name: "The Best Ever Death Metal Band in Denton",
+                path: "music/The Mountain Goats/The Best Ever Death Metal Band in Denton.mp3",
+            },
+            {
+                name: "Woke Up New",
+                path: "music/The Mountain Goats/Woke new.mp3",
+            },
+            {
+                name: "Golden Boy",
+                path: "music/The Mountain Goats/Golden Boy.mp3",
+            },
+        ],
     },
   ],
 };
