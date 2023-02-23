@@ -38,10 +38,14 @@ function pauseSong() {
   model.current.pause();
 }
 function nextSong() {
-  if (model.indexPlaying == model.listPlaying.length - 1) {
-    model.indexPlaying = 0;
+  if (model.shuffle) {
+    randomSong();
   } else {
-    model.indexPlaying++;
+    if (model.indexPlaying == model.listPlaying.length - 1) {
+      model.indexPlaying = 0;
+    } else {
+      model.indexPlaying++;
+    }
   }
   setSong(model.indexPlaying);
   playSong();
@@ -54,4 +58,7 @@ function previousSong() {
   }
   setSong(model.indexPlaying);
   playSong();
+}
+function randomSong() {
+  model.indexPlaying = Math.floor(Math.random() * model.listPlaying.length);
 }

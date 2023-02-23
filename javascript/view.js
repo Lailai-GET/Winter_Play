@@ -22,6 +22,8 @@ function updateView() {
         <button onclick="previousSong()"><--</button>
         <button onclick="playPause()">p/p</button>
         <button onclick="nextSong()">--></button>
+        <input name="random" type="checkbox" ${model.shuffle ? "checked" : ""} onchange="model.shuffle = !model.shuffle">
+        <label for="random">Shuffle</label>
         </div>
     </div>
     `;
