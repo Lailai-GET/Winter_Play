@@ -36,6 +36,88 @@ const model = {
       ],
     },
     {
+      name: "Øystein Sunde",
+      files: [
+        {
+          name: "2003 en butikk",
+          path: "music/Øystein Sunde/2003 en butikk.mp3",
+        },
+        {
+          name: "Datterdatter",
+          path: "music/Øystein Sunde/Datterdatter.mp3",
+        },
+        {
+          name: "Fjøsprat",
+          path: "music/Øystein Sunde/Fjøsprat.mp3",
+        },
+        {
+          name: "Hest er best som pålegg",
+          path: "music/Øystein Sunde/Hest er best som pålegg.mp3",
+        },
+        {
+          name: "Jaktprat",
+          path: "music/Øystein Sunde/Jaktprat.mp3",
+        },
+        {
+          name: "Oppfinnervise",
+          path: "music/Øystein Sunde/Oppfinnervise.mp3",
+        },
+        {
+          name: "Piken fra konfesjonsfabrikken",
+          path: "music/Øystein Sunde/Piken fra konfesjonsfabrikken.mp3",
+        },
+        {
+          name: "Skal det være noe mer før vi stenger",
+          path: "music/Øystein Sunde/Skal det være noe mer før vi stenger.mp3",
+        },
+        {
+          name: "Super-SS-rally-GT-fastback-hardtop-sprint",
+          path: "music/Øystein Sunde/Super-SS-rally-GT-fastback-hardtop-sprint.mp3",
+        },
+        {
+          name: "Svigerfars motorsag",
+          path: "music/Øystein Sunde/Svigerfars motorsag.mp3",
+        },
+        {
+          name: "Tass",
+          path: "music/Øystein Sunde/Tass.mp3",
+        },
+      ],
+    },
+    {
+      name: "Irish and Shanties",
+      files: [
+        {
+          name: "Irish Rover",
+          path: "music/Irish and Shanties/Irish Rover.mp3",
+        },
+        {
+          name: "Leave Her Johnny",
+          path: "music/Irish and Shanties/Leave Her Johnny.mp3",
+        },
+        {
+          name: "Lord of the dance",
+          path: "music/Irish and Shanties/Lord of the dance.mp3",
+        },
+        {
+          name: "Seven Drunken Nights",
+          path: "music/Irish and Shanties/Seven Drunken Nights.mp3",
+        },
+        {
+          name: "The Ramblin' Rover",
+          path: "music/Irish and Shanties/The Ramblin' Rover.mp3",
+        },
+        {
+          name: "Whiskey in the Jar",
+          path: "music/Irish and Shanties/Whiskey in the Jar.mp3",
+        },
+        {
+          name: "Wild Rover",
+          path: "music/Irish and Shanties/Wild Rover.mp3",
+        },
+      ],
+    },
+    {
       name: "Seasonality",
       files: [
         {
