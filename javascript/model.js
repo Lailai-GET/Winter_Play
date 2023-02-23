@@ -99,10 +99,10 @@ const model = {
           name: "Lord of the dance",
           path: "music/Irish and Shanties/Lord of the dance.mp3",
         },
-        {
-          name: "Seven Drunken Nights",
-          path: "music/Irish and Shanties/Seven Drunken Nights.mp3",
-        },
+        // {
+        //   name: "Seven Drunken Nights",
+        //   path: "music/Irish and Shanties/Seven Drunken Nights.mp3",
+        // },
         {
           name: "The Ramblin' Rover",
           path: "music/Irish and Shanties/The Ramblin' Rover.mp3",
